@@ -1,6 +1,6 @@
 /* BASE COLORS */
 body {
-    color: $color-text-body;
+    color: $color-text-light;
 }
 
 h1,
@@ -97,12 +97,12 @@ hr {
     font-weight: normal;
     line-height: 1;
     margin: 0;
-    color: $color-accent;
+    color: $color-text-light;
 }
 
 .subheadline {
     font-weight: normal;
     font-size: 2.5rem;
     margin: .25em 0;
-    color: $color-light-accent;
+    color: $color-tan-accent;
 }

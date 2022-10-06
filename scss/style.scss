@@ -4,17 +4,21 @@
 }
 
 // VARIABLES
-$color-text-body: rgba(0, 0, 0, .8);
+$color-text-dark: rgba(34, 34, 34, .8);
+$color-text-light: rgba(247, 245, 239, .8);
 $color-text-headings: rgba(0, 0, 0, 1);
-$color-accent: rgb(226, 239, 124);
-$color-link: rgb(195, 202, 143);
-$color-link-darker: rgb(164, 171, 104);
-$color-light-accent: rgba(122, 203, 157, 1);
-$color-dark-accent: rgba(90, 132, 108, 1);
+$color-background: rgba(34, 34, 34, .8);
+$color-link: rgb(73, 91, 131);
+$color-link-darker: rgba(208, 206, 201, 1);
+$color-tan-accent: rgba(234, 266, 183, 1);
+$color-yellow-accent: rgba(252, 191, 73, 1);
+$color-orange-accent: rgba(247, 127, 0, 1);
+$color-red-accent: rgba(214, 40, 40, 1);
+$color-blue-accent: rgba(0, 48, 73, 1);
 
 
-$font-family-sans: 'forma-djr-micro', Helvetica, Arial, sans-serif;
-$font-family-serif: 'utopia-std', serif;
+$font-family-sans: 'neuzeit-grotesk', sans-serif;
+$font-family-serif: 'elizeth', serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
