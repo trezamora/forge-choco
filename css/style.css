@@ -28,7 +28,7 @@ TABLE OF CONTENTS
 */
 /* BASE COLORS */
 body {
-  color: rgba(247, 245, 239, 0.8);
+  color: rgb(247, 245, 239);
 }
 
 h1,
@@ -116,7 +116,7 @@ hr {
   font-weight: normal;
   line-height: 1;
   margin: 0;
-  color: rgba(247, 245, 239, 0.8);
+  color: rgb(247, 245, 239);
 }
 
 .subheadline {
@@ -156,6 +156,17 @@ img {
 /* RESET BODY */
 body {
   margin: 0;
+}
+
+/* SECTION */
+section {
+  padding: 4em 0;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* CONTAINER */
@@ -270,30 +281,10 @@ body {
   padding: 1%;
 }
 
-/* SECTION */
-section {
-  padding: 4em 0;
-  min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#forge-intro {
-  background-color: rgb(34, 34, 34);
-}
-#forge-intro h3,
-#forge-intro p {
-  color: rgba(247, 245, 239, 0.8);
-}
-
 /* HERO SECTION */
 .hero {
   padding: 6em 0;
   color: white;
-  background: rgba(34, 34, 34, 0.8);
   text-align: center;
   min-height: 100vh;
   display: -ms-grid;
@@ -307,12 +298,103 @@ section {
 .hero p {
   margin: 1em auto;
 }
+.hero .background-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.hero .hero-background {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* SITE SECTIONS HOME PAGE */
+#forge-intro h1,
+#forge-intro p {
+  color: rgb(247, 245, 239);
+}
+#forge-intro .background-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+#forge-intro .img-background {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#forge-feature {
+  background-color: rgb(34, 34, 34);
+  border-radius: 0 0 75% 0;
+  position: relative;
+}
+#forge-feature:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 191, 73);
+  z-index: -1;
+}
+#forge-feature h1,
+#forge-feature p {
+  color: rgb(247, 245, 239);
+}
+#forge-feature .featured-container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1200px;
+}
+#forge-feature .featured-container .featured-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#forge-rewards {
+  background-color: rgb(247, 245, 239);
+  border-radius: 75% 0 0 0;
+  position: relative;
+}
+#forge-rewards:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 191, 73);
+  z-index: -1;
+}
+#forge-rewards .reward-title {
+  font-size: 10rem;
+}
+#forge-rewards h1,
+#forge-rewards p {
+  color: rgb(34, 34, 34);
+}
 
 /* TO HIDE SOMETHING VISUALLY */
 .hide-visually {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+.centered {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* SITE-HEADER SITE-NAV */

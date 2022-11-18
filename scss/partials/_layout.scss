@@ -4,6 +4,15 @@ body {
     margin: 0;
 }
 
+/* SECTION */
+
+section {
+    padding: 4em 0;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
 /* CONTAINER */
 
 .container {
