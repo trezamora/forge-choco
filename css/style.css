@@ -123,7 +123,7 @@ hr {
   font-weight: normal;
   font-size: 2.5rem;
   margin: 0.25em 0;
-  color: rgb(234, 255, 183);
+  color: rgb(237, 245, 239);
 }
 
 /* BUTTONS */
@@ -320,6 +320,7 @@ body {
   color: rgb(247, 245, 239);
 }
 #forge-intro .background-img {
+  background-color: black;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -350,7 +351,7 @@ body {
 #forge-feature p {
   margin: 0 auto;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 #forge-feature .featured-text h1,
@@ -358,6 +359,7 @@ body {
   font-size: 8em;
   color: rgb(247, 245, 239);
   margin-bottom: 0;
+  margin-top: 0;
 }
 #forge-feature .featured-container {
   margin: 0 auto;
@@ -368,7 +370,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+}
+#forge-feature .thumb-grid {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#forge-feature .thumb-grid li {
+  list-style-type: none;
+  width: 49.5%;
+  padding-bottom: 0.4%;
+}
+@media (min-width: 768px) {
+  #forge-feature .thumb-grid li {
+    width: 29.333%;
+  }
 }
 
 #forge-rewards {
@@ -391,6 +413,124 @@ body {
 #forge-rewards p {
   color: rgb(34, 34, 34);
 }
+#forge-rewards .rewards-container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1500px;
+}
+#forge-rewards .rewards-container .featured-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ABOUT PAGE */
+#forge-history {
+  background-color: rgb(237, 245, 239);
+  position: relative;
+}
+#forge-history h2,
+#forge-history p {
+  color: rgb(34, 34, 34);
+}
+#forge-history h2 {
+  text-transform: uppercase;
+}
+
+#forge-values {
+  background-color: rgb(34, 34, 34);
+  height: 100%;
+  border-radius: 0 20% 0 0;
+  position: relative;
+}
+#forge-values h1,
+#forge-values h3,
+#forge-values p {
+  color: rgb(247, 245, 239);
+  line-height: 1.4;
+}
+#forge-values:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(237, 245, 239);
+  z-index: -1;
+}
+#forge-values .values-container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1000px;
+}
+#forge-values .values-container h3 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#forge-values .value-text {
+  padding: 1em;
+}
+
+#forge-mission {
+  background-color: rgb(237, 245, 239);
+  position: relative;
+  border-radius: 40% 0 0 0;
+}
+#forge-mission:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(34, 34, 34);
+  z-index: -2;
+}
+#forge-mission .mission-header {
+  background-color: rgb(0, 48, 73);
+  width: 800px;
+  height: 350px;
+  margin: 0 auto;
+  top: -110px;
+  position: relative;
+  border-radius: 0 0 0 3em;
+  z-index: 7;
+}
+#forge-mission .mission-header h1,
+#forge-mission .mission-header h3,
+#forge-mission .mission-header p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5em;
+}
+#forge-mission .mission-header h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgb(247, 245, 239);
+}
+#forge-mission .mission-header h3 {
+  margin-top: 4em;
+  font-family: "neuzeit-grotesk", sans-serif;
+  color: rgb(247, 245, 239);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+#forge-mission .mission-header p {
+  color: rgb(252, 191, 73);
+}
+#forge-mission .mission-wrapper {
+  margin: 1em auto;
+  padding: 2em 1em;
+}
+#forge-mission .mission-wrapper .row {
+  padding: 2em 0;
+}
+#forge-mission .mission-wrapper h3 {
+  font-family: "neuzeit-grotesk", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#forge-mission .mission-wrapper p {
+  color: rgb(34, 34, 34);
+}
 
 /* TO HIDE SOMETHING VISUALLY */
 .hide-visually {
@@ -404,6 +544,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fixed {
+  padding: 4em 0;
+  min-height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* SITE-HEADER SITE-NAV */
