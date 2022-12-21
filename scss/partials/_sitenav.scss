@@ -5,6 +5,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    margin: .5em auto;
+    padding: 0 2em;
 
     .header-container {
         border: 2px solid white;
@@ -33,7 +35,6 @@
             color: white;
             text-decoration: none;
         }
-
     }
 
 }
@@ -42,10 +43,12 @@
 
 .site-footer {
     background-color: $color-blue-accent;
-    padding: 1em 0;
+    padding: 1em 2em;
     width: 100%;
     display: flex;
     align-items: center;
+    // margin: .5em auto;
+
 
     .footer-container {
         border: 2px solid white;
